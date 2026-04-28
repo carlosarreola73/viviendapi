@@ -1,6 +1,6 @@
-# Vivienda API - Senior SecOps Backend
+# sinestry Vivienda API - Juan Carlos Arreola López
 
-API RESTful para la gestión automatizada de certificados de póliza de vivienda.
+API RESTful para la gestión automatizada de certificados de póliza de vivienda GNP.
 
 ## Características
 - **FastAPI:** Documentación interactiva (Swagger/Redoc).
@@ -8,6 +8,17 @@ API RESTful para la gestión automatizada de certificados de póliza de vivienda
 - **GDrive API:** Organización automática de carpetas por Póliza/Certificado.
 - **BigQuery:** Registro histórico de transacciones.
 - **Seguridad:** Validación estricta con Pydantic y ejecución en contenedor no-root.
+
+## ¿Cómo funciona esto? (Explicación sencilla)
+
+Esta herramienta es como un **asistente automático** que hace todo el trabajo pesado cuando alguien necesita un certificado de su seguro de vivienda GNP:
+
+1.  **Tú le das los datos**: Le mandas la información de la persona (nombre, crédito, dirección, etc.) a través de un formato digital (JSON).
+2.  **Él hace el PDF**: Al instante, crea un documento PDF bonito y oficial con toda esa información y hasta le pone un sello digital.
+3.  **Lo guarda en la "nube"**: Sin que tú hagas nada, crea una carpeta en **Google Drive** con el número de póliza, mete el PDF ahí y te da el link para que lo descargues.
+4.  **Anota todo**: Al mismo tiempo, guarda un registro en una base de datos (**BigQuery**) para que siempre sepas qué certificados se han generado.
+
+¡Todo esto pasa en segundos y de forma súper segura!
 
 ## Requisitos Previos
 - Docker instalado.

@@ -1,0 +1,21 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Secretos y Configuración (CRÍTICO)
+.env
+GOOGLE_CREDENTIALS_JSON
+key.json
+*.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs y Temporales
+*.log
+.pytest_cache/
+.DS_Store
